@@ -5,13 +5,13 @@ class MarmotsController < ApplicationController
   end
 
   def new
-    @product = Marmot.new
+    @marmot = Marmot.new
   end
 
   def create
-    @product = Marmot.new(marmot_params)
+    @marmot = Marmot.new(marmot_params)
 
-    if @product.save
+    if @marmot.save
       redirect_to products_path, :notice => t("flash.questions.create.notice")
     else
       render :new
