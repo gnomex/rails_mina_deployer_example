@@ -5,7 +5,7 @@ require 'mina/git'
 set :domain, '179.106.217.9'
 
 set :deploy_to, '/var/www/example.com'
-set :repository, 'git@github.com:gnomex/rails_mina_deployer_example.git'
+set :repository, 'https://github.com/gnomex/rails_mina_deployer_example.git'
 set :branch, 'master'
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
