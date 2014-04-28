@@ -7,6 +7,7 @@ gem "protected_attributes", "~> 1.0.5"
 gem 'pg'
 
 gem 'unicorn', '~> 4.8.2'
+gem 'mina', '~> 0.3.0'
 
 group :assets do
   gem 'sass-rails', '~> 4.0.0'
@@ -20,7 +21,6 @@ end
 group :development do
   gem "pry", "~> 0.9.12.2"
   gem 'awesome_print', "~> 1.1.0"
-  gem 'mina', '~> 0.3.0'
 end
 
 group :development, :test do
