@@ -47,7 +47,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.1)
-    commonjs (0.2.7)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.1)
@@ -58,11 +57,6 @@ GEM
     i18n (0.6.11)
     json (1.8.1)
     kgio (2.9.2)
-    less (2.5.1)
-      commonjs (~> 0.2.7)
-    less-rails (2.5.0)
-      actionpack (>= 3.1)
-      less (~> 2.5.0)
     libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -173,7 +167,6 @@ DEPENDENCIES
   capybara (= 2.0.1)
   coffee-rails (~> 4.0.0)
   factory_girl (~> 4.4.0)
-  less-rails (~> 2.5.0)
   mina (~> 0.3.0)
   pg
   protected_attributes (~> 1.0.5)
