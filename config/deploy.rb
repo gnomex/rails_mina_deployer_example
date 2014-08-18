@@ -3,7 +3,7 @@ require 'mina/bundler'
 require 'mina/rails'
 require 'mina/git'
 
-set :domain, 'vm@host'
+set :domain, '179.106.217.23'
 
 set :deploy_to, '/var/www/mina-deployer-example'
 set :repository, 'https://github.com/gnomex/rails_mina_deployer_example.git'
