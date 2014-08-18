@@ -1,8 +1,9 @@
 require 'mina/bundler'
+require 'mina/rvm'
 require 'mina/rails'
 require 'mina/git'
 
-set :domain, '179.106.217.9'
+set :domain, 'myVM@host'
 
 set :deploy_to, '/var/www/example.com'
 set :repository, 'https://github.com/gnomex/rails_mina_deployer_example.git'
@@ -19,12 +20,9 @@ set :port, 3245
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
 task :environment do
-  # If you're using rbenv, use this to load the rbenv environment.
-  # Be sure to commit your .rbenv-version to your repository.
-  # invoke :'rbenv:load'
-
   # For those using RVM, use this to load an RVM version@gemset.
   # invoke :'rvm:use[ruby-1.9.3-p125@default]'
+  invoke :'rvm:use[ruby-2.1.2@mina-deployer]'
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
