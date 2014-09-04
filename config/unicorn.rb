@@ -1,5 +1,13 @@
 # config/unicorn.rb
 worker_processes Integer(ENV["WEB_CONCURRENCY"] || 3)
+
+listen "/var/www/mina-deployer-example/current/tmp/sockets/unicorn.sock", :backlog => 64
+
+pid "/var/www/mina-deployer-example/current/tmp/pids/mina-deployer-example.pid"
+stderr_path "/var/www/mina-deployer-example/shared/log/unicorn.log"
+stdout_path "/var/www/mina-deployer-example/shared/log/unicorn.log"
+working_directory "/var/www/mina-deployer-example/current"
+
 timeout 15
 preload_app true
 

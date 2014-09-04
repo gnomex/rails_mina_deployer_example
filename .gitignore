@@ -20,3 +20,5 @@ config/database.yml
 /node_modules
 /vendor/assets/bower
 .rvmrc
+
+/scripts

@@ -7,6 +7,7 @@ gem "protected_attributes", "~> 1.0.5"
 gem 'pg'
 
 gem 'unicorn', '~> 4.8.2'
+# gem 'unicorn-worker-killer'
 gem 'mina', '~> 0.3.0'
 
 group :assets do
