@@ -5,6 +5,11 @@ root = "/var/www/mina-deployer-example"
 
 listen "#{root}/current/tmp/sockets/unicorn.sock", :backlog => 64
 
+# listen 3000 # listen to port 3000 on all TCP interfaces
+# listen "127.0.0.1:3000"  # listen to port 3000 on the loopback interface
+# listen "/path/to/.unicorn.sock" # listen on the given Unix domain socket
+# listen "[::1]:3000" # listen to port 3000 on the IPv6 loopback interface
+
 pid "#{root}/current/tmp/pids/mina-deployer-example.pid"
 stderr_path "/#{root}/shared/log/unicorn.log"
 stdout_path "#{root}/shared/log/unicorn.log"
