@@ -27,7 +27,10 @@ module RailsMinaDeployerExample
 
     # Disable the asset pipeline.
     config.assets.enabled = false
+    # config.assets.css_compressor = :yui
+    config.assets.css_compressor = :sass
+    config.assets.js_compressor = :uglify
 
-    config.assets.paths << Rails.root.join('vendor', 'assets')
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'bower')
   end
 end
